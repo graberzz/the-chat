@@ -1,0 +1,33 @@
+{
+  "name": "thechat",
+  "version": "1.0.0",
+  "description": "Real time chat. React, Redux, Firebase.",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "firebase": "5.2.0",
+    "lodash": "^4.17.10",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-redux": "5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-transition-group": "^1.2.1",
+    "redux": "latest",
+    "redux-devtools-extension": "2.13.5",
+    "redux-logger": "latest",
+    "redux-thunk": "latest",
+    "styled-components": "^3.3.3"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && firebase deploy"
+  }
+}
