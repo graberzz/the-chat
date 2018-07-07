@@ -4,7 +4,7 @@
   - ReactJS for UI
   - React Router for routing
   - Redux for state management
-  - Styled Component for styling
+  - Styled Components for styling
   - Firebase as backend
   
 Powered by [create-react-app](https://github.com/facebook/create-react-app)
