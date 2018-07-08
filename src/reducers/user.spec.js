@@ -1,4 +1,4 @@
-import user from './user';
+import user, * as selectors from './user';
 
 describe('user reducer', () => {
   const testUser = {
@@ -26,5 +26,17 @@ describe('user reducer', () => {
     const state = user(testUser, action);
 
     expect(state).toBe(null);
+  });
+});
+
+describe('user selectors', () => {
+  it('getUser selector', () => {
+    const state = {
+      username: 'test',
+      avatar: 'avatar',
+      email: 'e@mail.com',
+    };
+    
+    expect(selectors.getUser(state)).toEqual(state);
   });
 });
