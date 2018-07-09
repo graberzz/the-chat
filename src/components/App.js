@@ -6,7 +6,6 @@ import styled from 'styled-components';
 
 import RoomList from './RoomList';
 import Chat from './Chat';
-import Preloader from './Preloader';
 import { vars, Container, Button, NoRoomSelected } from './common';
 import * as selectors from 'reducers';
 import * as actions from 'actions';
@@ -130,7 +129,7 @@ class App extends React.Component {
   }
 
   render() {
-    const { user, rooms, fetchingRooms } = this.props;
+    const { user, rooms } = this.props;
     const { leftPanelOpen } = this.state;
 
     return (
