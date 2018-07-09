@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MessageInput /> matches snapshot 1`] = `
+<styled.div>
+  <TextArea
+    disabled={false}
+    innerRef={[Function]}
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    placeholder="You haven't logged in"
+    value=""
+  />
+  <styled.div>
+    <EmojiSelector
+      onEmojiClick={[Function]}
+    />
+  </styled.div>
+</styled.div>
+`;
+
+exports[`<MessageInput /> matches snapshot with logged in user 1`] = `
+<styled.div>
+  <TextArea
+    disabled={false}
+    innerRef={[Function]}
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    placeholder="Type your message..."
+    value=""
+  />
+  <styled.div>
+    <EmojiSelector
+      onEmojiClick={[Function]}
+    />
+  </styled.div>
+</styled.div>
+`;

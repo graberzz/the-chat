@@ -7,6 +7,7 @@ import MessageInput from './MessageInput';
 import Preloader from './Preloader';
 import { NoRoomSelected } from './common';
 import { getRoomMessages } from 'actions';
+import * as api from 'api';
 import * as selectors from 'reducers';
 
 const Bottom = styled.div`
@@ -61,7 +62,10 @@ class Chat extends React.Component {
             <TypersWrap>
               {typersFiltered.join(', ')} typing...
             </TypersWrap>}
-          <MessageInput roomId={match.params.id} />
+          <MessageInput
+            api={api}
+            roomId={match.params.id}
+          />
         </Bottom>
       </React.Fragment>
     );
