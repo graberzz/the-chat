@@ -37,7 +37,7 @@ export class MessageInput extends React.Component {
   
   constructor(props) {
     super(props);
-    
+
     this.throttledSetTyping = throttle(props.api.setTyping, 1000);
   }
 
@@ -73,14 +73,16 @@ export class MessageInput extends React.Component {
   onEmojiClick = (emoji) => {
     if (!this.props.user) return;
 
-    const { selectionStart } = this.textarea;
+    const { selectionStart, selectionEnd } = this.textarea;
     const { text } = this.state;
-
     const textArr = text.split('');
     textArr.splice(selectionStart, 0, emoji);
     
     this.setState({
       text: textArr.join('')
+    }, () => {
+      this.textarea.focus();
+      this.textarea.setSelectionRange(selectionStart + 2, selectionEnd + 2);
     });
   }
 
