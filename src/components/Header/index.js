@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
+import { Link } from 'react-router-dom';
 import UserProfile from 'components/UserProfile';
 import { vars, Container } from 'components/common';
 
@@ -27,7 +27,9 @@ const Logo = styled.div`
 const Header = () => (
   <HeaderWrap>
     <SContainer>
-      <Logo>theCHAT</Logo>
+      <Link to='/'>
+        <Logo>theCHAT</Logo>
+      </Link>
       <UserProfile />
     </SContainer>
   </HeaderWrap>
