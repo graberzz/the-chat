@@ -105,7 +105,7 @@ class App extends React.Component {
 
       const isNotOwnMessage = this.props.user && this.props.user.email !== message.user.email;
       const isNotLoggedIn = !this.props.user;
-      
+
       if (isNotOwnMessage || isNotLoggedIn) {
         playMsgAudio();
       }
@@ -124,7 +124,7 @@ class App extends React.Component {
 
   onAddRoom = () => {
     if (this.roomInput.value.trim() === '') return;
-    
+
     api.addRoom(this.roomInput.value, this.props.user.username);
     this.roomInput.value = '';
   }
@@ -137,8 +137,7 @@ class App extends React.Component {
       <Container>
         <AppWrap>
           <LeftPanel className={leftPanelOpen ? 'open' : ''}>
-            {fetchingRooms ? <Preloader /> :
-              <RoomList rooms={rooms} />}
+            <RoomList rooms={rooms} />
             {user !== null &&
               <React.Fragment>
                 <RoomInput
@@ -179,7 +178,6 @@ App.propTypes = {
 const mapStateToProps = (state, ownProps) => ({
   user: selectors.getUser(state),
   rooms: selectors.getRooms(state),
-  fetchingRooms: selectors.getIsFetchingRooms(state),
 });
 
 const mapDispatchToProps = {

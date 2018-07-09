@@ -7,7 +7,6 @@ import typers, * as fromTypers from './typers';
 // selectors
 export const getUser = (state) => fromUser.getUser(state.user);
 export const getRooms = (state) => fromRooms.getRooms(state.rooms);
-export const getIsFetchingRooms = (state) => fromRooms.getIsFetchingRooms(state.rooms);
 export const getIsFetchingMessages = (state) => fromMessages.getIsFetchingMessages(state.messages);
 export const getRoomMessages = (state, roomId) => fromMessages.getRoomMessages(state.messages, roomId);
 export const getRoomTypers = (state, roomId) => fromTypers.getRoomTypers(state.typers, roomId);
