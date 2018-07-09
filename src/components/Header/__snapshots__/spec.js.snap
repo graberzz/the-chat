@@ -3,9 +3,14 @@
 exports[`<Header /> matches snapshot 1`] = `
 <styled.div>
   <styled.div>
-    <styled.div>
-      theCHAT
-    </styled.div>
+    <Link
+      replace={false}
+      to="/"
+    >
+      <styled.div>
+        theCHAT
+      </styled.div>
+    </Link>
     <Connect(Component) />
   </styled.div>
 </styled.div>
