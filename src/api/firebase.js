@@ -1,12 +1,14 @@
-import firebase from "firebase";
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/database';
 
 const config = {
-  apiKey: "AIzaSyBnZTs_h_o0Uw5m706dcTbP54VtSM5ZZYE",
-  authDomain: "chat-8a443.firebaseapp.com",
-  databaseURL: "https://chat-8a443.firebaseio.com",
-  projectId: "chat-8a443",
-  storageBucket: "chat-8a443.appspot.com",
-  messagingSenderId: "660697500625"
+  apiKey: 'AIzaSyBnZTs_h_o0Uw5m706dcTbP54VtSM5ZZYE',
+  authDomain: 'chat-8a443.firebaseapp.com',
+  databaseURL: 'https://chat-8a443.firebaseio.com',
+  projectId: 'chat-8a443',
+  storageBucket: 'chat-8a443.appspot.com',
+  messagingSenderId: '660697500625'
 };
 
 if (firebase.apps.length === 0) {
