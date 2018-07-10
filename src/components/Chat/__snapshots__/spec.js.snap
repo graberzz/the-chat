@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Chat /> matches snapshot 1`] = `
+<React.Fragment>
+  <MessageList
+    messages={
+      Array [
+        Object {
+          "id": "1",
+          "message": "msg1",
+          "timestamp": 1,
+          "user": Object {
+            "avatar": "avatar",
+            "email": "@mail",
+            "username": "test",
+          },
+        },
+        Object {
+          "id": "2",
+          "message": "msg2",
+          "timestamp": 3,
+          "user": Object {
+            "avatar": "avatar",
+            "email": "@mail",
+            "username": "test",
+          },
+        },
+      ]
+    }
+  />
+  <styled.div>
+    <Connect(MessageInput)
+      api={
+        Object {
+          "addRoom": [Function],
+          "getRoomMessages": [Function],
+          "login": [Function],
+          "logout": [Function],
+          "onAuthChange": [Function],
+          "sendMessage": [Function],
+          "setTyping": [Function],
+          "unsetTyping": [Function],
+          "watchNewMessages": [Function],
+          "watchRooms": [Function],
+          "watchTypers": [Function],
+        }
+      }
+      roomId="1"
+    />
+  </styled.div>
+</React.Fragment>
+`;

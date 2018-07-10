@@ -2,10 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 
-import MessageList from './MessageList';
-import MessageInput from './MessageInput';
-import Preloader from './Preloader';
-import { NoRoomSelected } from './common';
+import MessageList from '../MessageList';
+import MessageInput from '../MessageInput';
+import Preloader from '../Preloader';
+import { NoRoomSelected } from '../common';
 import { getRoomMessages } from 'actions';
 import * as api from 'api';
 import * as selectors from 'reducers';
@@ -25,7 +25,7 @@ const TypersWrap = styled.div`
   font-size: .8em;
 `;
 
-class Chat extends React.Component {
+export class Chat extends React.Component {
   componentDidMount() {
     this.props.getRoomMessages(this.props.match.params.id);
   }
