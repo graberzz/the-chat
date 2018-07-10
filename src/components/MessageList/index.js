@@ -3,7 +3,7 @@ import { CSSTransitionGroup } from 'react-transition-group';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Message from './Message/';
+import Message from '../Message';
 
 const MessageListWrap = styled.ul`
   height: 100%;
@@ -57,7 +57,10 @@ MessageList.propTypes = {
     user: PropTypes.shape({
       email: PropTypes.string.isRequired,
     }),
-  })),
+  })).isRequired,
+  user: PropTypes.shape({
+    email: PropTypes.string.isRequired,
+  }),
 };
 
 export default MessageList;

@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MessageList /> matches snapshot 1`] = `
+<ul
+  class="sc-iwsKbI biXbNh"
+>
+  <span>
+    <li
+      class="sc-ifAKCX eJhyaS"
+    >
+      <div
+        class="sc-bZQynM ifsTat"
+      >
+        <div
+          class="sc-gzVnrw gczGLK"
+        >
+          test
+        </div>
+        <img
+          alt="test"
+          class="sc-htoDjs ftOaTd"
+          src="avatar"
+        >
+          
+        </img>
+      </div>
+      msg1
+      <div
+        class="sc-dnqmqq iDZheP"
+      >
+        1970-1-1 05:00:00
+      </div>
+    </li>
+    <li
+      class="sc-ifAKCX eJhyaS"
+    >
+      <div
+        class="sc-bZQynM ifsTat"
+      >
+        <div
+          class="sc-gzVnrw gczGLK"
+        >
+          test
+        </div>
+        <img
+          alt="test"
+          class="sc-htoDjs ftOaTd"
+          src="avatar"
+        >
+          
+        </img>
+      </div>
+      msg2
+      <div
+        class="sc-dnqmqq iDZheP"
+      >
+        1970-1-1 05:00:00
+      </div>
+    </li>
+  </span>
+</ul>
+`;
