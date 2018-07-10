@@ -40,7 +40,7 @@ class MessageList extends React.Component {
   }
 
   render() {
-    const { messages, user } = this.props;
+    const { messages, user, timestampToDate } = this.props;
 
     return (
       <MessageListWrap innerRef={ref => this.wrap = ref}>
@@ -74,6 +74,10 @@ MessageList.propTypes = {
   user: PropTypes.shape({
     email: PropTypes.string.isRequired,
   }),
+};
+
+MessageList.defaultProps = {
+  timestampToDate,
 };
 
 export default MessageList;

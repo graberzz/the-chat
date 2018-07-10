@@ -27,6 +27,6 @@ const testMsgs = [
 
 describe('<MessageList />', () => {
   it('matches snapshot', () => {
-    expect(render(<MessageList messages={testMsgs} />)).toMatchSnapshot();
+    expect(render(<MessageList messages={testMsgs} timestampToDate={ts => ts} />)).toMatchSnapshot();
   });
 });

@@ -27,6 +27,7 @@ exports[`<Chat /> matches snapshot 1`] = `
         },
       ]
     }
+    timestampToDate={[Function]}
   />
   <styled.div>
     <Connect(MessageInput)
