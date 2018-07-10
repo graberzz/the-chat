@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import RoomItem from './RoomItem/';
+import RoomItem from '../RoomItem';
 
 const RoomList = ({ rooms }) => (
   <ul>
@@ -13,7 +13,7 @@ const RoomList = ({ rooms }) => (
 RoomList.propTypes = {
   rooms: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string.isRequired,
-  })),
+  })).isRequired,
 };
 
 export default RoomList;

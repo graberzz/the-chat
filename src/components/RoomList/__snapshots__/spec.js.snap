@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RoomList /> matches snapshot 1`] = `
+<ul>
+  <RoomItem
+    key="1"
+    room={
+      Object {
+        "creator": "admin",
+        "id": "1",
+        "name": "roomone",
+      }
+    }
+  />
+  <RoomItem
+    key="2"
+    room={
+      Object {
+        "creator": "admin",
+        "id": "2",
+        "name": "roomtwo",
+      }
+    }
+  />
+</ul>
+`;
