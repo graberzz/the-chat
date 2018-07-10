@@ -1,4 +1,4 @@
-# Real-time chat with Google authentication [![Build Status](https://travis-ci.org/graberzz/the-chat.svg?branch=master)](https://travis-ci.org/Igraberzz/the-chat)
+# Real-time chat with Google authentication [![Build Status](https://travis-ci.org/graberzz/the-chat.svg?branch=master)](https://travis-ci.org/graberzz/the-chat)
 ## Demo is available [here](https://chat-8a443.firebaseapp.com/)
 ### Technologies used:
   - ReactJS for UI
