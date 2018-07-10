@@ -17,15 +17,28 @@ const MessageListWrap = styled.ul`
   }
 `;
 
-class MessageList extends React.Component {  
+const timestampToDate = (ts) => {
+  const a = new Date(ts);
+  const year = a.getFullYear();
+  const month = a.getMonth() + 1 > 9 ? a.getMonth() + 1 : '0' + (a.getMonth() + 1);
+  const date = a.getDate() > 9 ? a.getDate() : '0' + a.getDate();
+  const hour = a.getHours() > 9 ? a.getHours() : '0' + a.getHours();
+  const min = a.getMinutes() > 9 ? a.getMinutes() : '0' + a.getMinutes();
+  const sec = a.getSeconds() > 9 ? a.getSeconds() : '0' + a.getSeconds();
+  const time = `${hour}:${min}:${sec} ${date}.${month}.${year}`;
+  
+  return time;
+};
+
+class MessageList extends React.Component {
   componentDidMount() {
     this.wrap.scrollTo(0, this.wrap.scrollHeight);
   }
-  
+
   componentDidUpdate() {
     this.wrap.scrollTo(0, this.wrap.scrollHeight);
   }
-  
+
   render() {
     const { messages, user } = this.props;
 
@@ -42,7 +55,7 @@ class MessageList extends React.Component {
               avatar={msg.user.avatar}
               username={msg.user.username}
               message={msg.message}
-              time={new Date(msg.timestamp).toLocaleString('ru-RU')}
+              time={timestampToDate(msg.timestamp)}
             />
           )}
         </CSSTransitionGroup>
